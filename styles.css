@@ -1,0 +1,141 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    background: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #005f5f; 
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #008080 4px solid; 
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.branding {
+    float: left;
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 2em; 
+}
+
+.nav {
+    float: right;
+    margin-top: 5px; 
+}
+
+.nav ul li a:hover, .nav ul li a:focus {
+    text-decoration: underline; 
+    color: #cceeff; 
+}
+
+section#showcase {
+    background: url('img/leapmotion1.jpg') no-repeat center center/cover; 
+    min-height: 400px;
+    margin-bottom: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+section#main {
+    padding: 20px;
+    background: #ffffff; 
+}
+
+footer {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px; 
+}
+
+.image-gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 15px; 
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto; 
+    padding: 5px;
+    background: #fff; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+
+.image-gallery a:link, .image-gallery a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.image-gallery a:hover, .image-gallery a:active {
+    text-decoration: underline;
+    color: #006666;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+    
+    .branding, .nav {
+        float: none;
+        text-align: center;
+    }
+
+    .nav ul {
+        margin-top: 0;
+    }
+
+    .nav ul li {
+        display: block; 
+        margin-bottom: 5px; 
+    }
+    
+    .branding h1 {
+        margin-bottom: 20px; 
+    }
+}
+
+
+
